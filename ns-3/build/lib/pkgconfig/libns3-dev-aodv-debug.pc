@@ -1,0 +1,10 @@
+prefix=/home/joseph/ns-3/build
+libdir=/home/joseph/ns-3/build/lib
+includedir=/home/joseph/ns-3/build/include/ns3-dev
+
+Name: libns3-aodv
+Description: ns-3 module ns3-aodv
+Version: 3-dev
+Libs: -L${libdir} -Wl,-Bdynamic -lns3-dev-aodv-debug
+Cflags: -I${includedir}
+Requires: libns3-dev-internet-debug libns3-dev-wifi-debug

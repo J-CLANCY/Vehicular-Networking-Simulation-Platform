@@ -1,0 +1,10 @@
+prefix=/home/joseph/ns-3/build
+libdir=/home/joseph/ns-3/build/lib
+includedir=/home/joseph/ns-3/build/include/ns3-dev
+
+Name: libns3-brite
+Description: ns-3 module ns3-brite
+Version: 3-dev
+Libs: -L${libdir} -Wl,-Bdynamic -lns3-dev-brite-debug -L/home/joseph/ns-3/source/BRITE -L/home/joseph/ns-3/source/BRITE -lbrite -ldl -ldl -ldl
+Cflags: -I${includedir} -DNS3_BRITE -I/home/joseph/ns-3/source/BRITE -I/home/joseph/ns-3/source/BRITE/Models
+Requires: libns3-dev-network-debug libns3-dev-core-debug libns3-dev-internet-debug libns3-dev-point-to-point-debug

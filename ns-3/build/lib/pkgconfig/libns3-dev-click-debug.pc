@@ -1,0 +1,10 @@
+prefix=/home/joseph/ns-3/build
+libdir=/home/joseph/ns-3/build/lib
+includedir=/home/joseph/ns-3/build/include/ns3-dev
+
+Name: libns3-click
+Description: ns-3 module ns3-click
+Version: 3-dev
+Libs: -L${libdir} -Wl,-Bdynamic -lns3-dev-click-debug -L/home/joseph/ns-3/build/lib -lnsclick -ldl -ldl -ldl
+Cflags: -I${includedir} -DNS3_CLICK -I/home/joseph/ns-3/build/include
+Requires: libns3-dev-core-debug libns3-dev-network-debug libns3-dev-internet-debug

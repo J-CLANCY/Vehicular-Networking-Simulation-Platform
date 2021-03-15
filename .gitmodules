@@ -1,0 +1,27 @@
+[submodule "ns-3/bake"]
+	path = ns-3/bake
+	url = https://gitlab.com/nsnam/bake.git
+[submodule "sumo"]
+	path = sumo
+	url = https://github.com/eclipse/sumo
+[submodule "ns-3/source/ns-3-dev"]
+	path = ns-3/source/ns-3-dev
+	url = git@gitlab.com:cttc-lena/ns-3-dev.git
+[submodule "ns-3/source/pygccxml-1.9.1+git2b1efbb9+patch"]
+	path = ns-3/source/pygccxml-1.9.1+git2b1efbb9+patch
+	url = https://github.com/gccxml/pygccxml.git
+[submodule "ns-3/source/pybindgen"]
+	path = ns-3/source/pybindgen
+	url = https://github.com/gjcarneiro/pybindgen.git
+[submodule "ns-3/source/ns3-mmwave"]
+	path = ns-3/source/ns3-mmwave
+	url = https://github.com/nyuwireless-unipd/ns3-mmwave.git
+[submodule "ns-3/source/netanim-3.108"]
+	path = ns-3/source/netanim-3.108
+	url = https://gitlab.com/nsnam/netanim.git
+[submodule "ns-3/source/click-ns-3.25"]
+	path = ns-3/source/click-ns-3.25
+	url = git://github.com/kohler/click.git
+[submodule "ns-3/source/castxml-0.2"]
+	path = ns-3/source/castxml-0.2
+	url = https://github.com/CastXML/CastXML.git
