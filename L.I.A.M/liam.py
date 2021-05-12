@@ -80,6 +80,7 @@ def car_sim(args):
     """
     print("Ah yes, the carsim command is being executed, as it should be!")
 
+    # See imports
     sim(args)
 
 
@@ -90,7 +91,7 @@ def save(args):
     print("Ah yes, the save command is being executed, as it should be!")
 
     r_code = subprocess.call(
-        "cd ~ && sudo git commit -u && sudo git push",
+        "cd ~/nuigcar && sudo git commit -u && sudo git push",
         shell=True, executable='/bin/bash')
 
 
