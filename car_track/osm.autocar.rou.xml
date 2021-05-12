@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue 28 Apr 2020 07:22:48 PM IST by Eclipse SUMO netedit Version v1_5_0+0995-d754181b35
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/joseph/sumo/car_track/osm.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/joseph/sumo/car_track/osm.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="true"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="true"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="/home/joseph/sumo/car_track/osm.autocar.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="ENG_NORTH 203503835#4 25753445#1 25753445#3 25753445#4 25753445#5 -32946158#3 -32946158#2 -32946158#1 -32946158#0 25753421#2 -25771747#2 -25771747#1 -25771747#0 -131875033#4 -131875033#3 -131875033#2 131269083#0 131269083#1 131269083#2 PARK_N_RIDE_NORTH PARK_N_RIDE_SOUTH -131269083#2 -131269083#1 -131269083#0 131875033#2 131875033#3 131875033#4 131875033#5 25771747#1 25771747#2 25753421#3 25753421#1 32946158#0 32946158#1 32946158#2 32946158#3 -25753445#5 -25753445#4 -25753445#3 -25753445#1 -25753445#0 ENG_SOUTH" color="yellow" id="auto_car_route"/>
+    <vehicle id="auto_car" depart="0.00" color="blue" route="auto_car_route"/>
+</routes>

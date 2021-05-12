@@ -91,7 +91,7 @@ def save(args):
     print("Ah yes, the save command is being executed, as it should be!")
 
     r_code = subprocess.call(
-        "cd ~/nuigcar && sudo git commit -u && sudo git push",
+        "cd ~/nuigcar && sudo git commit -a && sudo git push",
         shell=True, executable='/bin/bash')
 
 
