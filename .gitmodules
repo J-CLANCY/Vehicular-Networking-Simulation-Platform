@@ -1,12 +1,12 @@
 [submodule "ns-3/bake"]
 	path = sims/ns-3/bake
 	url = https://gitlab.com/nsnam/bake.git
-[submodule "sumo"]
+[submodule "sims/sumo"]
 	path = sims/sumo
 	url = https://github.com/eclipse/sumo
-[submodule "ns-3-dev"]
-	path = $NUIGCAR_HOME/sims/ns-3/source/ns-3-dev
+[submodule "sims/ns-3/source/ns-3-dev"]
+	path = sims/ns-3/source/ns-3-dev
 	url = git@gitlab.com:cttc-lena/ns-3-dev.git
-[submodule "netanim-3.108"]
+[submodule "sims/ns-3/source/netanim-3.108"]
 	path = sims/ns-3/source/netanim-3.108
 	url = https://gitlab.com/nsnam/netanim.git
