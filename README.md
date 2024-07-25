@@ -43,7 +43,7 @@ _Figure 2 - Simulation Platform Execution Flowchart_
 
 If the mobility traces of traffic for the desired scenario have been organically collected, then the SUMO simulation can be skipped. However, if the mobility traces of traffic require simulation, the SUMO simulation is then run using the road network of the NUI Galway test route, see Figure 3. All the GPS coordinates of the relevant infrastructure and road users, defined as parameters, are taken and converted to a local cartesian coordinate system, followed by the generation of the mobility traces for every relevant traffic entity in the scenario. Following either the skipping or the completion of the SUMO simulation, the relevant Linux virtual networking facilities instantiated based on the configured simulation parameters. With the necessary facilities and inputs set and collected, the NS-3 simulation is run. 
 
-![Figure 3](/images/UofGalwayTestRoute)  
+![Figure 3](/images/UofGalwayTestRoute.png)  
 _Figure 3 - University of Galway Campus Route_
 
 Within the NS-3 simulation, the topology of the preliminary communications network is created (connecting optic fibres and setting up the wireless network), and the relevant nodes are connected to the outside world via their TAP interfaces. Each mobile stakeholder is given a starting position defined by their mobility traces and are then connected wirelessly to their nearest base station. The NS-3 simulation then applies the mobility models provided to the traffic entities and carries the data streams sent from the real world. The outputs from this simulation are PCAP files, this they can then be analysed by various packet tracing tools.
