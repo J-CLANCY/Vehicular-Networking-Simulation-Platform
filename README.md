@@ -7,21 +7,21 @@ NS-3 was chosen due to it's ability to connect to the outsite world if needed, g
 ## Project Structure
 
 ```
-├── ""Documentation"" => Contains documentation for this project.  
-│    ├── ""Diagrams"" => Diagrams created for thesis document.  
-│    ├── ""FYP_Thesis_Joseph_Clancy.pdf"" => Bachelor's thesis document.  
-│    ├── ""RISC-V Compiler Installation Guide.docx"" => Guide written to use RISC-V gcc toolchain (Winter 2019).  
-│    ├── ""RISC-V FYP.docx"" => Minor document with a few overview notes.  
-│    ├── ""RISC-V User Guide"" => Minor document meant to accompany the course content and online content on Vicilogic.  
-├── ""RISCV_Top/vhdl"" => Contains the VHDL source code and Xilinx Vivado project files.  
-│    ├── ""HDLModel"" => Contains VHDL source code for the RISC-V Device-Under-Test (DUT) and testbench.  
-│    ├── ""xilinxprj"" => Contains the Xilinx project files.  
-├── ""Scripts"" => Contains a series of convenience scripts for using the RISC-V DUT.  
-│    ├── ""assemble.sh"" => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.  
-│    ├── ""compile.sh"" => Runs the gcc compiler on a given C file.  
-│    ├── ""hex_to_TB.py"" => Converts RISC-V toolchain hex output into a usable format for VHDL testbench.  
-│    ├── ""hex_to_viciMacro.py"" => Converts RISC-V toolchain hex output into a usable format for the ViciLogic platform.  
-│    ├── ""little_to_big.py"" => Converts from little to big-endian.  
+├── "".idea"" => Config from PyCharm  
+├── ""old"" => Old code that I wanted to keep
+│    ├── ""L.I.A.M"" => A series of helper scripts to run the simulation platform. I was losing my mind during the pandemic and named it after my housemate at the time.
+│    ├── ""osm_car_track"" => Contains the files needed for the University of Galway campus route in SUMO.
+│    ├── ""osm_car_track"" => NS-3 C++ code for the old version of the vehicular communications system based on the University of Galway campus route.
+├── ""sims"" => Where the git submodules for NS-3 and SUMO are kept.
+│    ├── ""ns-3"" => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.  
+│    ├── ""sumo"" => Runs the gcc compiler on a given C file.  
+├── ""src"" => My code for the vehicular communications simulation platform
+│    ├── ""config"" => Config files for the simulation platform
+│    ├── ""ns-3-code"" => 
+│    ├── ""python-code"" => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.  
+│    ├── ""route"" => Runs the gcc compiler on a given C file.
+│    ├── ""helper.py" => Runs after _compile.sh_ to assemble and link RISC-V hex output for use in the RISC-V DUT.  
+├── "".gitmodules"" => List of github submodiles i.e. NS-3, SUMO etc.  
 ```
 
 ## Project Overview
