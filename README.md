@@ -30,21 +30,21 @@ This vehicular networking simulation platform was designed with two major goals 
 
 As previously mentioned, the two open-source simulation tools were chosen for this platform. NS-3 was chosen because, at the time, the Centre Tecnològic de Telecomunicacions de Catalunya (CTTC) had developed the most up-to-date 5G NR simulation tool, known as 5G-LENA [6], an extension of NS-3. SUMO was chosen because it was the only other open-source mobility simulator at the time (or at least that I could find). In the initial 9 months of this project, a preliminary simulation platform was developed, see Figure 1. This platform was hosted on a virtual Linux environment with VirtualBox, where Linux (LXC/LXD) container technology is used to provide the functionality allowing a connection point between the real world and the simulation. This connection point leverages Linux’s TAP interface to enable the simulation to code to send and receive data from the host machine's networking firmware. It should be noted that Docker was considered for the container functionality, however, the networking capabilities of Docker are limited and where not suitable for this application.
 
-![Figure 1](/images/VirtualTestPlatform.png)
-Figure 1 - Vehicular Networking Simulation Platform
+![Figure 1](/images/VirtualTestPlatform.png)  
+_Figure 1 - Vehicular Networking Simulation Platform_
 
 The process of running a test via this simulation platform can be seen in Figure 2. The desired scenario is initially defined by:
 -	The routes to be taken by relevant traffic e.g., vehicles, pedestrians.
 -	The placement of static nodes in the network e.g., servers, base stations, fixed sensor nodes.
 -	The data to be transmitted.
 
-![Figure 2](/images/SimulationProcess.png)
-Figure 2 - Simulation Platform Execution Flowchart
+![Figure 2](/images/SimulationProcess.png)  
+_Figure 2 - Simulation Platform Execution Flowchart_
 
 If the mobility traces of traffic for the desired scenario have been organically collected, then the SUMO simulation can be skipped. However, if the mobility traces of traffic require simulation, the SUMO simulation is then run using the road network of the NUI Galway test route, see Figure 3. All the GPS coordinates of the relevant infrastructure and road users, defined as parameters, are taken and converted to a local cartesian coordinate system, followed by the generation of the mobility traces for every relevant traffic entity in the scenario. Following either the skipping or the completion of the SUMO simulation, the relevant Linux virtual networking facilities instantiated based on the configured simulation parameters. With the necessary facilities and inputs set and collected, the NS-3 simulation is run. 
 
-![Figure 3](/images/UofGalwayTestRoute)
-Figure 3 - University of Galway Campus Route
+![Figure 3](/images/UofGalwayTestRoute)  
+_Figure 3 - University of Galway Campus Route_
 
 Within the NS-3 simulation, the topology of the preliminary communications network is created (connecting optic fibres and setting up the wireless network), and the relevant nodes are connected to the outside world via their TAP interfaces. Each mobile stakeholder is given a starting position defined by their mobility traces and are then connected wirelessly to their nearest base station. The NS-3 simulation then applies the mobility models provided to the traffic entities and carries the data streams sent from the real world. The outputs from this simulation are PCAP files, this they can then be analysed by various packet tracing tools.
 
