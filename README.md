@@ -5,7 +5,6 @@ This repository was created as an attempt to create and use a vehicular networki
 ## Project Structure
 
 ```
-├── "".idea"" => Config from PyCharm  
 ├── ""old"" => Old code that I wanted to keep
 │    ├── ""L.I.A.M"" => A series of helper scripts to run the simulation platform. I was losing my mind during the pandemic and named it after my housemate at the time.
 │    ├── ""osm_car_track"" => Contains the files needed for the University of Galway campus route in SUMO.
